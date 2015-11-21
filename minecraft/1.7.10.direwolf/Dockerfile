@@ -7,6 +7,7 @@ VOLUME /srv/minecraft/world
 
 ADD conf /srv/minecraft/
 ADD bin /srv/minecraft/
+RUN chmod 777 -R /srv/minecraft
 
 RUN /srv/minecraft/install.sh
 
