@@ -1,18 +1,12 @@
-FROM java:latest
+FROM java:alpine
 
-RUN apt-get update && apt-get install -y htop wget
-RUN mkdir /srv/minecraft
-WORKDIR /srv/minecraft/
-VOLUME /srv/minecraft/world
+RUN apk update && apk add acf-openssl
 
-ADD conf /srv/minecraft/
-ADD bin /srv/minecraft/
-RUN chmod 777 -R /srv/minecraft
+COPY conf /srv/minecraft/
+COPY bin /srv/minecraft/
 
 RUN /srv/minecraft/install.sh
 
-RUN chmod 777 -R /srv/minecraft
-
-CMD ["./run.sh"]
+CMD ["srv/minecraft/ServerStart.sh"]
 
 EXPOSE 25565
