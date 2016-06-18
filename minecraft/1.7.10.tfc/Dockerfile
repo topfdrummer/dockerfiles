@@ -1,6 +1,6 @@
-FROM java:latest
+FROM java:alpine
 
-RUN apt-get update && apt-get install -y htop wget
+#RUN apt-get update && apt-get install -y htop wget
 RUN mkdir /srv/minecraft
 
 VOLUME /srv/minecraft/world
