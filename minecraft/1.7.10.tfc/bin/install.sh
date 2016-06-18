@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 wget -O /srv/minecraft/forgeinstaller.jar http://files.minecraftforge.net/maven/net/minecraftforge/forge/1.7.10-10.13.4.1558-1.7.10/forge-1.7.10-10.13.4.1558-1.7.10-installer.jar
 chmod +x /srv/minecraft/forgeinstaller.jar

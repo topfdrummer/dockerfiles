@@ -5,8 +5,8 @@ RUN mkdir /srv/minecraft
 
 VOLUME /srv/minecraft/world
 
-ADD conf /srv/minecraft/
-ADD bin /srv/minecraft/
+COPY conf /srv/minecraft/
+COPY bin /srv/minecraft/
 
 RUN chmod 777 /srv/minecraft/install.sh
 RUN /srv/minecraft/install.sh
