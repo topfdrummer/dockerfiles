@@ -1,4 +1,4 @@
-FROM java:alpine
+FROM openjdk:alpine
 
 RUN apk update && apk add acf-openssl
 
@@ -12,4 +12,3 @@ COPY conf /srv/minecraft/
 CMD ["/srv/minecraft/ServerStart-Other.sh"]
 
 EXPOSE 25565
-
