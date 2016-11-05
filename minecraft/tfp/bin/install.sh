@@ -1,5 +1,6 @@
 cd /srv
-wget -O server.zip ftb.cursecdn.com/FTB2/modpacks/TerraFirmaPunk/2_0_7/TerraFirmaPunkServer.zip
+wget -O server.zip ftb.cursecdn.com/FTB2/modpacks/TerraFirmaPunk/2_1_0/TerraFirmaPunkServer.zip
+#wget -O server.zip ftb.cursecdn.com/FTB2/modpacks/TerraFirmaPunk/2_0_7/TerraFirmaPunkServer.zip
 #wget -O server.zip ftb.cursecdn.com/FTB2/modpacks/TerraFirmaPunk/2_0_0/TerraFirmaPunkServer.zip
 unzip /srv/server.zip
 rm server.zip
