@@ -1,4 +1,4 @@
-FROM java:alpine
+FROM openjdk:alpine
 
 RUN apk update && apk add acf-openssl
 

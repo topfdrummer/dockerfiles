@@ -1,4 +1,4 @@
-FROM java:alpine
+FROM openjdk:alpine
 
 #RUN apt-get update && apt-get install -y htop wget
 RUN mkdir /srv/minecraft
