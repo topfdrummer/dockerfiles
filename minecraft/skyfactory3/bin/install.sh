@@ -1,6 +1,6 @@
 mkdir /srv/minecraft
 cd /srv/minecraft
-wget -O server.zip http://ftb.cursecdn.com/FTB2/modpacks/FTBPresentsSkyfactory3/3_0_7/FTBPresentsSkyfactory3Server.zip
+wget -O server.zip http://ftb.cursecdn.com/FTB2/modpacks/FTBPresentsSkyfactory3/3_0_15/FTBPresentsSkyfactory3Server.zip
 unzip server.zip
 rm server.zip
 rm *.bat
